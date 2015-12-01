@@ -4,6 +4,6 @@ This app uses the wunderground API to get the current conditions and 3 day forca
 
 ##To run locally
 
-* Clone repository
+* clone repository
 * run `bundle install`
 * run `rails server`
