@@ -17,3 +17,7 @@ From the root of the repository, install the tools used to develop.
 Then serve it on a local server on http://localhost:7998/Font-Awesome/:
 
     $ rails server
+
+## Running tests
+
+    $ rake spec
