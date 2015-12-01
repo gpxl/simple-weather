@@ -1,3 +1,5 @@
+[ ![Codeship Status for gpxl/simple-weather](https://codeship.com/projects/b372c4a0-7a7c-0133-33b8-22676f811343/status?branch=master)](https://codeship.com/projects/119146)
+
 #[Simple Weather](https://simp-weather.herokuapp.com)
 ###A simple weather app using the WUnderground API
 
