@@ -1,0 +1,54 @@
+<div class="container main">
+  <div class="row current">
+    <div class="text-center">
+      <%= @response['current_observation']['display_location']['full'] %>
+    </div>
+    <div class="col-xs-push-4 col-xs-4 col-sm-4 col-sm-push-4 text-center">
+      <%= image_tag @response['current_observation']['icon_url'] %>
+    </div>
+    <div class="col-xs-push-4 col-xs-4 col-sm-4 col-sm-push-4 text-center">
+      <h1>
+        <%= @response['current_observation']['temp_f'].to_i %>&deg;
+        <br>
+        <small><%= @response['current_observation']['weather'] %></small>
+      </h1>
+
+    </div>
+    <div class="col-xs-12 col-sm-4 col-sm-pull-8 text-center">
+      <h1>Today</h1>
+    </div>
+  </div>
+  <div class="row forecast">
+    <% @response['forecast']['simpleforecast']['forecastday'][1..3].each do |forecast| %>
+    <div class="col-xs-12 col-sm-4 text-center forecastday">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8 col-xs-4 icon text-right">
+            <%= image_tag forecast['icon_url'] %>
+          </div>
+          <div class="col-sm-4 col-sm-push-0 col-xs-4 col-xs-push-4 temp text-left">
+            <%= forecast['high']['fahrenheit'].to_i %>&deg;
+          </div>
+          <div class="col-sm-12 col-sm-pull-0 col-xs-4 col-xs-pull-4 day">
+            <%= forecast['date']['weekday'] %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <%= form_tag '/', method: :get, class:"form-inline text-center" do %>
+    <div class="form-group">
+      <label for="zipcode">Zip Code</label>
+      <input type="text" name="zipcode" class="form-control" value="<%= params[:zipcode] || '97212' %>">
+      <button type="submit" class="btn btn-default">Change</button>
+      <%= content_tag(:div, flash[:notice], class: 'alert alert-danger') if flash[:notice] %>
+    </div>
+  <% end %>
+</div>
+<nav class="footer navbar-fixed-bottom">
+  <div class="container text-center">
+    <small>Powered by</small>
+    <%= image_tag 'http://icons.wxug.com/graphics/wu2/logo_130x80.png' %>
+  </div>
+</nav>
