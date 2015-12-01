@@ -1,0 +1,17 @@
+{
+  "name": "Simple Weather",
+  "description": "A small wunderground api app.",
+  "keywords": [
+    "Rails",
+    "API",
+    "weather"
+  ],
+  "website": "https://simp-weather.herokuapp.com",
+  "repository": "https://github.com/gpxl/simple-weather",
+  "env": {
+    "WU_API_TOKEN": {
+      "description": "Your WUnderground API token.",
+      "required": true
+    }
+  }
+}
