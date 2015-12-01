@@ -1,7 +1,7 @@
 class WeatherController < ApplicationController
   def index
     zipcode = filter_zipcode(params[:zipcode])
-    @response = Wunderground.new('13fcb02d16148708').forecast_and_conditions_for(zipcode)
+    @response = Wunderground.new(ENV['WU_API_TOKEN']).forecast_and_conditions_for(zipcode)
   end
 
   private

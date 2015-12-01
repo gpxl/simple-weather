@@ -16,7 +16,11 @@ From the root of the repository, install the tools used to develop.
 
     $ bundle install
 
-Then serve it on a local server on http://localhost:7998/Font-Awesome/:
+In the root of the repository, add a .env file with your WUnderground API token
+
+    $ WU_API_TOKEN=YOUR_API_KEY
+
+Then serve it on a local server on http://localhost:3000:
 
     $ rails server
 

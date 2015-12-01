@@ -37,6 +37,7 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0.0'
   gem 'sqlite3'
+  gem 'dotenv-rails'
 end
 
 gem 'pg', group: :production
