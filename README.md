@@ -22,7 +22,7 @@ In the root of the repository, add a .env file with your WUnderground API token
 
     $ WU_API_TOKEN=YOUR_API_KEY
 
-Then serve it on a local server on http://localhost:3000:
+Then serve it on a local server on http://localhost:3000/
 
     $ rails server
 
