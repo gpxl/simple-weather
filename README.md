@@ -7,6 +7,9 @@
 
 Given a zipcode, this will return the current conditions and 3 day forcast from WUnderground. Very simple and probably should have been an Ember or Sinatra app.
 
+##Variants
+* Simple Weather: Ember [repo](https://github.com/gpxl/simple-weather-ember) | [demo](http://simple-weather-rails.herokuapp.com)
+
 ##Author
 - Email: gerlando@gmail.com
 - Twitter: http://twitter.com/gpxl
