@@ -2,8 +2,8 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-#[Simple Weather](https://simp-weather.herokuapp.com)
-###A simple weather app using the WUnderground API
+#[Simple Weather: Rails](https://simple-weather-rails.herokuapp.com)
+###A simple weather app using Rails and the WUnderground API
 
 Given a zipcode, this will return the current conditions and 3 day forcast from WUnderground. Very simple and probably should have been an Ember or Sinatra app.
 
